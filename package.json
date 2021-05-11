@@ -1,0 +1,27 @@
+{
+  "name": "logware",
+  "version": "1.0.0",
+  "description": "API Wrapper for the Logware.io API",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaptainKrayola/logware-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaptainKrayola/logware-js/issues"
+  },
+  "homepage": "https://github.com/KaptainKrayola/logware-js#readme"
+}
