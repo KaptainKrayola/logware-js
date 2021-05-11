@@ -18,7 +18,7 @@ For full documentation see the Logware.io docs: https://docs.logware.io/instruct
 
 ## Usage
 ```
-const Logware = require('./index');
+const Logware = require('logwareio');
 const logware = new Logware({
     username: "myusername",
     password: "mypassword"
