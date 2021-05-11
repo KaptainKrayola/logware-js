@@ -1,5 +1,5 @@
 {
-  "name": "logware",
+  "name": "logwareio",
   "version": "1.0.0",
   "description": "API Wrapper for the Logware.io API",
   "main": "index.js",

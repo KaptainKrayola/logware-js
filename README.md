@@ -4,7 +4,7 @@ API Wrapper for the Logware.io API.  The module currently only supports callback
 For full documentation see the Logware.io docs: https://docs.logware.io/instructions/
 
 ## Installation
-`npm install logware`
+`npm install logwareio`
 
 ## Dependencies
 * `request` - https://www.npmjs.com/package/request (I know it's deprecated but it works fine and I don't have a better alternative)
