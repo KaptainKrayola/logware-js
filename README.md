@@ -3,6 +3,17 @@ API Wrapper for the Logware.io API.  The module currently only supports callback
 
 For full documentation see the Logware.io docs: https://docs.logware.io/instructions/
 
+**Important Notes**
+* The logware.insertData() can store a payload no larger than 2kb. Sometimes extra headers data get added so if your payload is very close to 2kb and you are getting errors your payload is probably too large. Reduce the size and try again."
+
+* it is recommended you encode your dataset with base64 encoding to protect against special characters. Be sure to know that base64 data is still public, so if you want your data to remain private, encrypt the base64 payload with AES256.
+
+* When data and hashes are inserted, it takes a little bit of time to complete the commit. When passing the temporary TaskId value to the logware.getHashInsertResults() and logware.getDataInsertResults() methods, it is recommended to wait at least 1 second prior to execution. It tales the API about 1 second to generate a TransactionId from the TaskId. The TransactionId is permanent and should be saved, but the TaskId is temporary and can be purged.
+
+* Manual inspection of block creation and the included TransactionId dataset can be viewed at https://explorer.logware.io/. When the data becomes visible here, the data has been written to the blockchain and can be considered permanent after 10 confirmation.
+
+* Within your application, you can VERY quickly grab your data with this URL, https://chaindata.logware.io/tx/eb23d9dd26809b280a631e9a02cfe349916c3a5d0648d59e5721e5ac769944ca. Just replace the TransactionId value with the respective TransactionId you are searching for. 
+
 ## Installation
 `npm install logwareio`
 
